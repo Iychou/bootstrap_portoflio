@@ -1,15 +1,15 @@
 :root {
-  --bg-deep: #0d1b1f;
-  --bg-panel: rgba(13, 27, 31, 0.72);
-  --bg-soft: #f5f0e8;
-  --bg-warm: #e5d5bf;
-  --text-light: #f7f4ef;
-  --text-dark: #122329;
-  --muted: #5d6a6f;
-  --accent: #630d95;
-  --accent-dark: #141c72;
+  --bg-deep: #061726;
+  --bg-panel: rgba(9, 31, 52, 0.72);
+  --bg-soft: #eef6ff;
+  --bg-warm: #c8dcf5;
+  --text-light: #f4f9ff;
+  --text-dark: #0f2740;
+  --muted: #58708a;
+  --accent: #2d7ff9;
+  --accent-dark: #1551c3;
   --border-soft: rgba(255, 255, 255, 0.12);
-  --shadow-lg: 0 30px 60px rgba(6, 15, 18, 0.22);
+  --shadow-lg: 0 30px 60px rgba(7, 31, 57, 0.22);
 }
 
 html {
@@ -20,8 +20,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text-dark);
   background:
-    radial-gradient(circle at top left, rgba(201, 139, 68, 0.18), transparent 28%),
-    linear-gradient(180deg, #0f2025 0%, #12242a 24%, #f5f0e8 24%, #f5f0e8 100%);
+    radial-gradient(circle at top left, rgba(76, 153, 255, 0.28), transparent 28%),
+    linear-gradient(180deg, #071a2e 0%, #0d3157 24%, #eef6ff 24%, #eef6ff 100%);
   perspective: 1200px;
 }
 
@@ -37,15 +37,15 @@ a {
 }
 
 .portfolio-nav {
-  background: rgba(8, 16, 18, 0.68);
+  background: rgba(5, 20, 38, 0.7);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
 .portfolio-nav.nav-scrolled {
-  background: rgba(8, 16, 18, 0.9);
-  box-shadow: 0 14px 40px rgba(5, 12, 14, 0.35);
+  background: rgba(5, 20, 38, 0.92);
+  box-shadow: 0 14px 40px rgba(4, 18, 34, 0.35);
   border-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -56,8 +56,8 @@ a {
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #f0c48e);
-  color: #0f1719;
+  background: linear-gradient(135deg, var(--accent), #7db6ff);
+  color: #041322;
   font-family: "Manrope", sans-serif;
   font-weight: 800;
 }
@@ -72,17 +72,17 @@ a {
 }
 
 .btn-accent {
-  background: linear-gradient(135deg, var(--accent), #e1b27d);
+  background: linear-gradient(135deg, var(--accent), #75aeff);
   border: none;
-  color: #102126;
+  color: #041728;
   font-weight: 700;
-  box-shadow: 0 12px 24px rgba(201, 139, 68, 0.24);
+  box-shadow: 0 12px 24px rgba(45, 127, 249, 0.28);
 }
 
 .btn-accent:hover,
 .btn-accent:focus {
-  background: linear-gradient(135deg, #d99b56, #ebbf8c);
-  color: #081114;
+  background: linear-gradient(135deg, #1d68e0, #8dc0ff);
+  color: #03111d;
 }
 
 .hero-section {
@@ -116,7 +116,7 @@ a {
   height: 24rem;
   top: 10%;
   right: -6rem;
-  background: radial-gradient(circle, rgba(201, 139, 68, 0.32), transparent 70%);
+  background: radial-gradient(circle, rgba(71, 145, 255, 0.34), transparent 70%);
   animation: floatOrb 9s ease-in-out infinite;
 }
 
@@ -125,7 +125,7 @@ a {
   height: 18rem;
   bottom: 16%;
   left: -5rem;
-  background: radial-gradient(circle, rgba(255, 245, 228, 0.1), transparent 70%);
+  background: radial-gradient(circle, rgba(172, 214, 255, 0.16), transparent 70%);
   animation: floatOrb 11s ease-in-out infinite reverse;
 }
 
@@ -136,7 +136,7 @@ a {
   letter-spacing: 0.22rem;
   font-size: 0.74rem;
   font-weight: 800;
-  color: #d5b896;
+  color: #8ec2ff;
 }
 
 .hero-title {
@@ -189,7 +189,7 @@ a {
 
 .layered-card {
   padding: 1.4rem;
-  background: rgba(7, 16, 19, 0.36);
+  background: rgba(7, 25, 44, 0.4);
   border-radius: 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -198,7 +198,7 @@ a {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.16rem;
-  color: #d9c1a3;
+  color: #a7d0ff;
   margin-bottom: 1rem;
 }
 
@@ -215,7 +215,7 @@ a {
 }
 
 .layered-card i {
-  color: #e4b988;
+  color: #7fb7ff;
 }
 
 .stats-row {
@@ -299,8 +299,8 @@ a {
 
 .section-dark {
   background:
-    linear-gradient(180deg, rgba(10, 24, 28, 0.98), rgba(12, 28, 33, 0.96)),
-    radial-gradient(circle at top right, rgba(201, 139, 68, 0.2), transparent 24%);
+    linear-gradient(180deg, rgba(6, 24, 43, 0.98), rgba(9, 36, 66, 0.96)),
+    radial-gradient(circle at top right, rgba(84, 152, 255, 0.24), transparent 24%);
 }
 
 .muted-copy {
@@ -318,7 +318,7 @@ a {
 
 .expertise-number {
   display: inline-block;
-  color: #d1a46f;
+  color: #82b8ff;
   font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: 0.18rem;
@@ -339,7 +339,7 @@ a {
   display: inline-flex;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
-  background: rgba(201, 139, 68, 0.14);
+  background: rgba(45, 127, 249, 0.14);
   color: var(--accent-dark);
   font-size: 0.85rem;
   font-weight: 700;
@@ -353,8 +353,8 @@ a {
 
 .impact-section {
   background:
-    radial-gradient(circle at bottom left, rgba(201, 139, 68, 0.16), transparent 22%),
-    linear-gradient(180deg, #f7f2eb, #efe5d7);
+    radial-gradient(circle at bottom left, rgba(84, 152, 255, 0.18), transparent 22%),
+    linear-gradient(180deg, #f3f8ff, #dfeeff);
 }
 
 .impact-card {
@@ -374,8 +374,8 @@ a {
   padding: 2.25rem;
   border-radius: 1.8rem;
   background:
-    linear-gradient(135deg, rgba(18, 35, 41, 0.95), rgba(28, 56, 64, 0.92)),
-    radial-gradient(circle at top right, rgba(201, 139, 68, 0.24), transparent 30%);
+    linear-gradient(135deg, rgba(8, 29, 51, 0.95), rgba(16, 56, 97, 0.92)),
+    radial-gradient(circle at top right, rgba(84, 152, 255, 0.24), transparent 30%);
   box-shadow: var(--shadow-lg);
 }
 
@@ -420,7 +420,7 @@ a {
 .site-footer {
   padding: 1.4rem 0 2rem;
   color: var(--muted);
-  background: #f5f0e8;
+  background: #eef6ff;
 }
 
 .reveal-up {
@@ -476,7 +476,7 @@ a {
   }
 
   .portfolio-nav {
-    background: rgba(8, 16, 18, 0.88);
+    background: rgba(5, 20, 38, 0.9);
   }
 
   .terrain-grid {
