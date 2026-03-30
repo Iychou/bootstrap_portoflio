@@ -245,6 +245,47 @@ a {
   padding: 6rem 0;
 }
 
+.trust-strip {
+  position: relative;
+  margin-top: -2.4rem;
+  z-index: 2;
+}
+
+.trust-shell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 39, 64, 0.08);
+  box-shadow: 0 20px 40px rgba(8, 31, 58, 0.1);
+}
+
+.trust-label {
+  color: var(--muted);
+  font-weight: 700;
+  max-width: 30rem;
+}
+
+.trust-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.trust-logos span {
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(45, 127, 249, 0.08);
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.04rem;
+}
+
 .section-title {
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.08;
@@ -388,6 +429,34 @@ a {
   background: rgba(255, 255, 255, 0.92);
 }
 
+.contact-form {
+  padding: 1.6rem;
+  border-radius: 1.35rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 35px rgba(6, 18, 35, 0.14);
+}
+
+.contact-form .form-label {
+  color: var(--text-light);
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(14, 39, 64, 0.12);
+  color: var(--text-dark);
+  box-shadow: none;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: rgba(45, 127, 249, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(45, 127, 249, 0.16);
+}
+
 .contact-item {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -471,6 +540,10 @@ a {
 }
 
 @media (max-width: 991.98px) {
+  .trust-strip {
+    margin-top: 0;
+  }
+
   .hero-title {
     max-width: 100%;
   }
@@ -498,10 +571,12 @@ a {
     padding: 4.5rem 0;
   }
 
+  .trust-shell,
   .hero-panel,
   .profile-card,
   .impact-panel,
-  .contact-shell {
+  .contact-shell,
+  .contact-form {
     padding: 1.5rem;
   }
 
